@@ -59,7 +59,7 @@ export default {
     present: 'Present',
     items: [
       { role: 'UI/UX Designer & Web Developer', org: 'Evolution IT', period: 'Feb — Apr 2026', text: 'Rebuilt the interface of an employee attendance system as part of a 3-person team — restructured the codebase and designed 5+ new modules, from a discipline dashboard to detailed attendance logs.' },
-      { role: 'UX Research Intern', org: 'Universitas Muhammadiyah Yogyakarta', period: '2025', text: 'Led a survey study with 251 respondents across 34 provinces to find which website content actually influences a prospective student\u2019s decision — and reported findings that challenged the university\u2019s own assumptions.' },
+      { role: 'UI/UX Designer', org: 'Universitas Muhammadiyah Yogyakarta', period: 'Feb — May 2025', text: 'Redesigned the Information Technology Study Program website with a fellow intern to support the accreditation process through stakeholder interviews, benchmarking, information architecture, wireframing, and high-fidelity UI design.' },
     ],
     educationItems: [
       { degree: 'B.Sc. Information Technology', org: 'Universitas Muhammadiyah Yogyakarta', period: '2022 — 2026', text: '' },

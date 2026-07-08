@@ -59,7 +59,7 @@ export default {
     present: 'Sekarang',
     items: [
       { role: 'UI/UX Designer & Web Developer', org: 'Evolution IT', period: 'Feb — Apr 2026', text: 'Merombak interface sistem absensi karyawan bersama tim 3 orang — merapikan struktur kode dan merancang 5+ modul baru, dari dashboard kedisiplinan sampai log absensi detail.' },
-      { role: 'UI/UX Designer', org: 'Universitas Muhammadiyah Yogyakarta', period: '2025', text: 'Memimpin studi survei dengan 251 responden dari 34 provinsi untuk menemukan konten website mana yang benar-benar memengaruhi keputusan calon mahasiswa — dan melaporkan temuan yang mematahkan asumsi kampus sendiri.' },
+      { role: 'UI/UX Designer', org: 'Universitas Muhammadiyah Yogyakarta', period: 'Feb — Mei 2025', text: 'Mendesain ulang website Program Studi Teknologi Informasi bersama rekan magang untuk mendukung proses akreditasi melalui stakeholder interview, benchmarking, penyusunan information architecture, wireframe, dan desain hi-fi.' },
     ],
     educationItems: [
       { degree: 'S1 Teknologi Informasi', org: 'Universitas Muhammadiyah Yogyakarta', period: '2022 — 2026', text: '' },
