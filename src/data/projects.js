@@ -1,0 +1,353 @@
+// Studi kasus nyata Anggia Intan Widyaningrum — disusun dari laporan magang,
+// capstone project, dan laporan riset yang sesungguhnya. Setiap project punya
+// copy bilingual di bawah `en` / `id`. `mockup` memilih ilustrasi abstrak di
+// src/ui/DeviceMockup.jsx (bukan screenshot asli, agar tampilan tetap konsisten).
+
+const projects = [
+  {
+    slug: 'homy-laundry',
+    year: '2025',
+    accent: '#0EA5E9',
+    accentSoft: '#E0F4FE',
+    mockup: 'laundry',
+    frameType: 'mobile',
+    gallery: [
+    '/case-studies/homy-laundry/1-login.png',
+    '/case-studies/homy-laundry/2-dashboard.png',
+    '/case-studies/homy-laundry/3-inputpesanan.png',
+  ], // taruh path gambar di public/case-studies/homy-laundry/ lalu daftarkan di sini
+    tools: ['Figma', 'FigJam', 'Android Studio (tim dev)'],
+    team: { en: '4 members — Anggia as UI/UX Designer & Usability Tester', id: '4 anggota — Anggia sebagai UI/UX Designer & Usability Tester' },
+    timeline: { en: '1 semester (2025)', id: '1 semester (2025)' },
+    en: {
+      title: 'Homy Laundry',
+      tagline: 'Designing and testing a mobile app for a laundry UMKM',
+      category: 'UMKM · Android App',
+      role: 'UI/UX Designer & Usability Tester',
+      summary: 'A capstone project turning a laundry business\u2019s manual, error-prone order and cash records into a structured Android app — designed and usability-tested directly with the owner.',
+      problem: 'Homy Laundry, a small laundry business in Sleman, Yogyakarta, tracked orders and payments entirely on paper. Missed notes led to incomplete order data, price inconsistencies from staff caused customer distrust, and monthly financial recaps took hours of manual tallying with no way to search past records.',
+      processText: 'I interviewed the owner directly to map her real daily workflow, then translated it into four user journey maps — order intake, washing process, return handoff, and cash recording — before moving into wireframes for two roles: admin and staff. Once the core screens were approved, I designed and ran a usability test on-site with the actual owner as the participant, scoring 31 real tasks on Task Success and Time on Task.',
+      solutionPoints: [
+        'Designed role-based screens for admin and staff: order list, order detail, customer/staff CRUD, and a service & category management flow that keeps pricing consistent.',
+        'Designed a monthly financial report view with search and PDF export, replacing manual per-transaction tallying.',
+        'Ran an on-site usability test with the owner across 31 tasks, scoring each on a 0\u20132 Task Success scale and timing every task.',
+        'Compared results against the old manual process and two competitor apps (Sindry, Matik Laundry) to validate the design was genuinely faster, not just prettier.',
+      ],
+      outcomeStats: [
+        { n: '31/31', l: 'tasks completed, zero failures' },
+        { n: '-92%', l: 'task time vs. the old manual process' },
+        { n: '-92.1s', l: 'faster than comparable laundry apps' },
+      ],
+      reflection: 'Designing for a real, non-technical owner — not a persona — changed how I work. Two tasks still caused friction in testing (login and finding the monthly report), and watching exactly where she hesitated taught me more than any assumption-based review ever could.',
+    },
+    id: {
+      title: 'Homy Laundry',
+      tagline: 'Merancang dan menguji aplikasi mobile untuk UMKM laundry',
+      category: 'UMKM · Aplikasi Android',
+      role: 'UI/UX Designer & Usability Tester',
+      summary: 'Capstone project yang mengubah pencatatan pesanan dan keuangan manual sebuah usaha laundry menjadi aplikasi Android terstruktur — dirancang dan diuji langsung bersama pemilik usaha.',
+      problem: 'Homy Laundry, usaha laundry rumahan di Sleman, Yogyakarta, mencatat pesanan dan pembayaran sepenuhnya di kertas. Nota yang lupa dicatat membuat data pesanan tidak lengkap, harga yang tidak konsisten dari pegawai memicu ketidakpercayaan pelanggan, dan rekap keuangan bulanan memakan waktu berjam-jam tanpa cara mencari data lama.',
+      processText: 'Saya mewawancarai pemilik usaha langsung untuk memetakan alur kerja hariannya, lalu menerjemahkannya menjadi empat user journey map — pencatatan pesanan, proses pencucian, pengembalian cucian, dan pencatatan keuangan — sebelum masuk ke wireframe untuk dua peran: admin dan pegawai. Setelah layar utama disetujui, saya merancang dan menjalankan usability testing on-site dengan pemilik usaha sebagai partisipan langsung, menilai 31 task nyata dengan metrik Task Success dan Time on Task.',
+      solutionPoints: [
+        'Merancang layar berbasis peran untuk admin dan pegawai: daftar pesanan, detail pesanan, CRUD pelanggan/pegawai, serta alur pengelolaan layanan & kategori agar harga tetap konsisten.',
+        'Merancang tampilan laporan keuangan bulanan dengan fitur pencarian dan ekspor PDF, menggantikan penjumlahan manual per transaksi.',
+        'Menjalankan usability testing on-site bersama pemilik usaha untuk 31 task, menilai tiap task dengan skala Task Success 0\u20132 sekaligus mengukur waktunya.',
+        'Membandingkan hasil dengan proses manual lama dan dua aplikasi kompetitor (Sindry, Matik Laundry) untuk memastikan desainnya benar-benar lebih cepat, bukan sekadar lebih rapi.',
+      ],
+      outcomeStats: [
+        { n: '31/31', l: 'task selesai, nol kegagalan' },
+        { n: '-92%', l: 'waktu task vs proses manual lama' },
+        { n: '-92,1 dtk', l: 'lebih cepat dari aplikasi laundry sejenis' },
+      ],
+      reflection: 'Merancang untuk pemilik usaha yang nyata dan non-teknis — bukan persona di atas kertas — mengubah cara saya bekerja. Dua task masih menimbulkan hambatan saat testing (login dan mencari laporan bulanan), dan melihat langsung di mana ia ragu mengajarkan saya lebih banyak dibanding review berbasis asumsi mana pun.',
+    },
+  },
+  {
+    slug: 'kesatriyan-absensi',
+    year: '2026',
+    accent: '#3D3AF1',
+    accentSoft: '#EDECFE',
+    mockup: 'dashboard',
+    frameType: 'desktop',
+    gallery: [
+    '/case-studies/kesatriyan-absensi/1-login.png',
+    '/case-studies/kesatriyan-absensi/2-dashboard.png',
+    '/case-studies/kesatriyan-absensi/3-manajemen.png',
+  ], // taruh path gambar di public/case-studies/kesatriyan-absensi/ lalu daftarkan di sini
+    tools: ['Figma', 'Laravel', 'MySQL'],
+    team: { en: '3-person internship team', id: 'Tim magang, 3 orang' },
+    timeline: { en: '2 months (Feb\u2013Apr 2026)', id: '2 bulan (Feb\u2013Apr 2026)' },
+    en: {
+      title: 'Kesatriyan',
+      tagline: 'Restructuring an employee attendance system\u2019s interface',
+      category: 'HR Tech · Web App',
+      role: 'UI/UX Designer & Web Developer',
+      summary: 'A hands-on internship project at Evolution IT rebuilding an existing employee attendance system \u2014 tidying the codebase and redesigning the interface into a clearer, feature-complete dashboard.',
+      problem: 'Evolution IT\u2019s existing attendance system worked, but its interface was cluttered and its code was hard to extend. There was no clear overview for admins, no structured way to manage shifts or tasks, and attendance records lacked the detail (photo, location, approval status) needed to resolve disputes.',
+      processText: 'Working alongside two teammates, we revamped the existing attendance system by restructuring the application and redesigning the interface to create a more organized, user-friendly experience that better supports both administrators and employees.',
+      solutionPoints: [
+        'Designed an admin dashboard summarizing attendance, pending approvals, and a discipline chart in one view instead of scattered screens.',
+        'Designed structured management screens for employees, shifts, and tasks (with master/sub-task grouping) using consistent modal patterns.',
+        'Designed a detailed attendance log with photo, GPS location, and an approve/reject flow so admins can resolve disputes with evidence.',
+        'Designed a focused daily check-in flow for employees: photo, location, and a task plan captured in a single screen.',
+      ],
+      outcomeStats: [
+        { n: '5+', l: 'new modules shipped (tasks, shifts, discipline ranking, detailed log)' },
+        { n: '29', l: 'active employees using the rebuilt system' },
+        { n: '2 mo', l: 'intensive redevelopment' },
+      ],
+      reflection: 'This was my first time redesigning a system that was already live and in daily use \u2014 the real constraint wasn\u2019t creativity, it was not breaking a workflow the HR team already depended on.',
+    },
+    id: {
+      title: 'Kesatriyan',
+      tagline: 'Merapikan interface sistem absensi karyawan',
+      category: 'HR Tech · Web App',
+      role: 'UI/UX Designer & Web Developer',
+      summary: 'Proyek magang di Evolution IT yang merombak sistem absensi karyawan yang sudah berjalan \u2014 merapikan struktur kode dan mendesain ulang interface menjadi dashboard yang lebih jelas dan lengkap fiturnya.',
+      problem: 'Sistem absensi Evolution IT sudah berfungsi, tapi interface-nya berantakan dan kodenya sulit dikembangkan. Admin tidak punya ringkasan yang jelas, belum ada cara terstruktur mengelola shift atau tugas, dan data absensi tidak punya detail (foto, lokasi, status approval) yang dibutuhkan untuk menyelesaikan komplain.',
+      processText: 'Bersama dua rekan tim, kami merombak sistem absensi yang sudah ada dengan menyusun ulang struktur aplikasi serta mendesain ulang interface agar lebih terstruktur, mudah digunakan, dan mendukung kebutuhan admin maupun karyawan.',
+      solutionPoints: [
+        'Merancang dashboard admin yang merangkum kehadiran, approval tertunda, dan grafik kedisiplinan dalam satu tampilan, bukan tersebar di banyak layar.',
+        'Merancang layar manajemen terstruktur untuk karyawan, shift, dan tugas (dengan pengelompokan master/sub-tugas) menggunakan pola modal yang konsisten.',
+        'Merancang log absensi detail dengan foto, lokasi GPS, dan alur approve/reject agar admin bisa menyelesaikan komplain dengan bukti jelas.',
+        'Merancang alur check-in harian yang fokus untuk karyawan: foto, lokasi, dan rencana tugas dalam satu layar.',
+      ],
+      outcomeStats: [
+        { n: '5+', l: 'modul baru dirilis (tugas, shift, ranking disiplin, log detail)' },
+        { n: '29', l: 'karyawan aktif memakai sistem hasil rombakan' },
+        { n: '2 bln', l: 'pengembangan intensif' },
+      ],
+      reflection: 'Ini pengalaman pertama saya merombak sistem yang sudah live dan dipakai sehari-hari \u2014 tantangan sebenarnya bukan kreativitas, tapi memastikan tidak merusak alur kerja yang sudah diandalkan tim HR.',
+    },
+  },
+  //
+  {
+    slug: 'redesign-website-ti-umy',
+    year: '2025',
+    accent: '#0D9488',
+    accentSoft: '#DAF3F0',
+    frameType: 'desktop',
+    mockup: 'travel',
+    gallery: [
+    '/case-studies/redesign-website-ti-umy/1-home.png',
+    '/case-studies/redesign-website-ti-umy/2-fasilitas.png',
+    '/case-studies/redesign-website-ti-umy/3-berita.png',
+  ], // taruh path gambar di public/case-studies/redesign-website-ti-umy/ lalu daftarkan di sini
+    tools: ['Figma', 'FigJam', 'Google Forms'],
+    team: { en: '2-person internship team', id: 'Tim magang, 2 orang' },
+    timeline: { en: 'Internship project · 2.5 months (2025)', id: 'Proyek magang · 2,5 bulan (2025)' },
+    en: {
+      title: 'TI UMY Website Redesign',
+      tagline: 'Redesigning a program website to support accreditation',
+      category: 'Concept Redesign · Institutional Website',
+      role: 'UI/UX Designer',
+      summary: 'A full redesign of the Information Technology program\u2019s website at UMY, created to support the program\u2019s accreditation review \u2014 from stakeholder interviews to a complete hi-fi design.',
+      problem: 'UMY\u2019s Information Technology program was preparing for an accreditation review, and its existing website no longer reflected the program\u2019s credibility \u2014 outdated structure, inconsistent visual identity, and information that was hard for both assessors and prospective students to find.',
+      processText: 'Working together as a two-person internship team, we interviewed program stakeholders to understand what accreditation assessors and prospective students needed most from the website. We then benchmarked leading university IT program websites, restructured the information architecture, and translated the findings into wireframes and complete high-fidelity designs.',
+      solutionPoints: [
+        'Interviewed program stakeholders to define what accreditation assessors and prospective students each needed from the site.',
+        'Benchmarked several leading university IT program websites to inform a clearer information architecture.',
+        'Restructured the sitemap and navigation around accreditation-relevant content: curriculum, faculty, achievements, and facilities.',
+        'Designed a complete hi-fi UI for every key page in Figma, aligned with UMY\u2019s institutional branding.',
+      ],
+      outcomeStats: [],
+      outcomeNote: 'This design was submitted as a proposal to support the program\u2019s accreditation process \u2014 it has not been implemented on the live site yet.',
+      reflection: 'This design was submitted as a proposal to support the program\u2019s accreditation process; it hasn\u2019t been implemented on the live site. That was a useful lesson early in my career \u2014 not every design ships, and that\u2019s a normal part of working with institutional stakeholders, not a personal failure.',
+    },
+    id: {
+      title: 'Redesign Website TI UMY',
+      tagline: 'Mendesain ulang website prodi untuk mendukung akreditasi',
+      category: 'Concept Redesign · Website Institusi',
+      role: 'UI/UX Designer',
+      summary: 'Redesign penuh website Program Studi Teknologi Informasi UMY, dibuat untuk mendukung proses akreditasi prodi \u2014 dari wawancara stakeholder sampai desain hi-fi lengkap.',
+      problem: 'Program Studi TI UMY sedang bersiap menghadapi asesmen akreditasi, dan website yang ada saat itu belum mencerminkan kredibilitas prodi \u2014 struktur yang sudah usang, identitas visual yang tidak konsisten, dan informasi yang sulit ditemukan baik oleh asesor maupun calon mahasiswa.',
+      processText: 'Bersama rekan magang, kami mewawancarai stakeholder program studi untuk memahami kebutuhan asesor akreditasi dan calon mahasiswa terhadap website. Selanjutnya, kami melakukan benchmark terhadap website beberapa program studi TI universitas terkemuka, menyusun ulang information architecture, lalu menerjemahkan hasilnya menjadi wireframe dan desain hi-fi untuk setiap halaman utama.',
+      solutionPoints: [
+        'Mewawancarai stakeholder prodi untuk menentukan kebutuhan asesor akreditasi dan calon mahasiswa terhadap website.',
+        'Membandingkan beberapa website prodi TI universitas top untuk menyusun information architecture yang lebih jelas.',
+        'Merestrukturisasi sitemap dan navigasi di sekitar konten relevan akreditasi: kurikulum, dosen, prestasi, dan fasilitas.',
+        'Merancang UI hi-fi lengkap untuk setiap halaman kunci di Figma, selaras dengan branding institusional UMY.',
+      ],
+      outcomeStats: [],
+      outcomeNote: 'Desain ini diserahkan sebagai proposal untuk mendukung proses akreditasi prodi \u2014 belum diimplementasikan ke website live.',
+      reflection: 'Desain ini diserahkan sebagai proposal untuk mendukung proses akreditasi prodi; belum diimplementasikan ke website live. Ini pelajaran berharga di awal karier saya \u2014 tidak semua desain akhirnya dirilis, dan itu hal yang wajar saat bekerja dengan stakeholder institusi, bukan kegagalan personal.',
+    },
+  },
+  {
+    slug: 'imm-hukum-website',
+    year: '2024',
+    accent: '#8B5CF6',
+    accentSoft: '#F1EBFE',
+    mockup: 'travel',
+    frameType: 'desktop',
+    gallery: [
+    '/case-studies/imm-hukum-website/1-home.png',
+    '/case-studies/imm-hukum-website/2-berita.png',
+    '/case-studies/imm-hukum-website/3-tentang.png',
+  ], // taruh path gambar di public/case-studies/imm-hukum-website/ lalu daftarkan di sini
+    tools: ['Figma', 'WordPress', 'Canva'],
+    team: { en: '3-person team — Anggia as UI/UX Designer & WordPress Implementer', id: 'Tim 3 orang — seluruh anggota berkontribusi pada proses desain UI/UX dan implementasi WordPress.' },
+    timeline: { en: 'Independent project', id: 'Proyek independen' },
+    en: {
+  title: 'IMM Hukum UMY',
+  tagline: 'Redesigning and shipping an organization website on WordPress',
+  category: 'Organization Website · WordPress',
+  role: 'UI/UX Designer & WordPress Implementer',
+  summary: 'A full redesign of the website for IMM (Ikatan Mahasiswa Muhammadiyah) Faculty of Law UMY, from UI/UX design to a live WordPress website. The project was completed collaboratively by a team of three.',
+
+  problem: 'IMM Hukum UMY’s existing website looked dated and didn’t clearly communicate the organization’s structure, programs, or activities to visiting students and members, making it a weak front door for a student organization trying to look credible and active.',
+
+  processText: 'Together with two teammates, I redesigned the website’s information architecture and visual identity in Figma by simplifying navigation, improving the visual hierarchy for programs and activities, and aligning the interface with the organization’s branding. We then collaboratively implemented the approved design in WordPress until the website was ready to launch.',
+
+  solutionPoints: [
+    'Redesigned the information architecture so members and visitors can find programs, structure, and news without digging through menus.',
+    'Rebuilt the visual identity with consistent typography, color, and imagery aligned to the organization’s branding.',
+    'Collaboratively implemented the approved design in WordPress, including page layouts, content structure, and templates, taking the project from Figma to a live website.',
+  ],
+      outcomeStats: [],
+      outcomeNote: 'The site is live and in active use by the organization\u2019s board \u2014 no formal metrics have been measured for this project yet.',
+      reflection: 'This was my first project involving both UI/UX design and WordPress implementation. Working within the real constraints of WordPress—not just a blank Figma canvas—taught me how to translate designs into a website that could be successfully launched.',
+    },
+    id: {
+  title: 'IMM Hukum UMY',
+  tagline: 'Mendesain ulang dan merilis website organisasi di WordPress',
+  category: 'Website Organisasi · WordPress',
+  role: 'UI/UX Designer & Implementer WordPress',
+
+  summary: 'Redesign penuh website IMM (Ikatan Mahasiswa Muhammadiyah) Fakultas Hukum UMY, mulai dari desain UI/UX hingga implementasi menjadi website WordPress yang live. Proyek ini dikerjakan secara kolaboratif oleh tim yang terdiri dari tiga orang.',
+
+  problem: 'Website IMM Hukum UMY yang lama terlihat kurang terawat dan tidak menyampaikan struktur organisasi, program kerja, maupun kegiatan dengan jelas kepada mahasiswa dan anggota yang berkunjung — membuatnya jadi "pintu depan" yang lemah untuk organisasi mahasiswa yang ingin terlihat kredibel dan aktif.',
+
+  processText: 'Bersama dua rekan tim, saya mendesain ulang struktur informasi dan identitas visual website di Figma dengan menyederhanakan navigasi, memperjelas hierarki visual untuk program kerja dan kegiatan, serta menyelaraskan tampilan dengan branding organisasi. Setelah desain disetujui, kami mengimplementasikannya secara kolaboratif ke WordPress hingga website siap dipublikasikan.',
+
+  solutionPoints: [
+    'Merancang ulang information architecture agar anggota dan pengunjung dapat menemukan program kerja, struktur organisasi, dan berita dengan lebih mudah.',
+    'Membangun ulang identitas visual menggunakan tipografi, warna, dan elemen visual yang konsisten dengan branding organisasi.',
+    'Mengimplementasikan desain secara kolaboratif di WordPress, termasuk penyusunan layout, struktur konten, dan page template hingga website berhasil dirilis.',
+  ],
+      outcomeStats: [],
+      outcomeNote: 'Situs sudah live dan digunakan langsung oleh pengurus organisasi \u2014 belum ada data metrik formal yang diukur untuk proyek ini.',
+      reflection: 'Ini merupakan proyek pertama saya yang terlibat langsung dalam proses desain UI/UX sekaligus implementasi website di WordPress. Bekerja dalam batasan nyata WordPress—bukan hanya di kanvas Figma—mengajarkan saya bagaimana menerjemahkan desain menjadi website yang benar-benar dapat digunakan dan dirilis.',
+    },
+  },
+  {
+    slug: 'marketchain-ecommerce',
+    year: '2026',
+    accent: '#16A34A',
+    accentSoft: '#E3F6E9',
+    mockup: 'marketplace',
+    frameType: 'desktop',
+    gallery: [
+    '/case-studies/marketchain-ecommerce/1-login.png',
+    '/case-studies/marketchain-ecommerce/2-ecommerce.png',
+    '/case-studies/marketchain-ecommerce/3-marketing.png',
+  ], // taruh path gambar di public/case-studies/marketchain-ecommerce/ lalu daftarkan di sini
+    tools: ['Laravel 12', 'PHP 8.2', 'MySQL', 'Figma'],
+    team: { en: 'Thesis project — Anggia designed & built the E-Commerce and Marketing modules', id: 'Skripsi individu — Anggia merancang & membangun modul E-Commerce dan Marketing' },
+    timeline: { en: 'Final year thesis (2026)', id: 'Skripsi tahun akhir (2026)' },
+    en: {
+      title: 'MarketChain',
+      tagline: 'Building the e-commerce engine of a business simulation game',
+      category: 'EdTech · Business Simulation Platform',
+      role: 'Module Developer & Interface Evaluator',
+      summary: 'My thesis project: designing and building the E-Commerce and Marketing modules for MarketChain, a web-based business simulation game UMY is developing for its upcoming Digital Business program.',
+      problem: 'UMY needed a way to teach digital business skills \u2014 product listing, B2B/B2C transactions, digital marketing campaigns \u2014 without the risk of real money or real failure. No existing tool let student teams run a full simulated business end to end, from listing a product to seeing how a marketing budget actually changes order volume.',
+      processText: 'I designed and built two of MarketChain\u2019s four business modules \u2014 E-Commerce and Marketing \u2014 on Laravel, including the logic connecting them: a campaign\u2019s budget, reach, and staffing directly affect the probability of virtual customer orders. After development, I validated the result with Black Box Testing for functional correctness, then ran User Acceptance Testing with 2 respondent groups \u2014 3 domain experts and 9 end users \u2014 scored across functionality, integration, performance, and interface experience.',
+      solutionPoints: [
+        'Built the E-Commerce module: product listing to a virtual marketplace, B2C order processing, and a B2B stock-request flow with seller-side approval between student teams.',
+        'Built the Marketing module: multi-platform ad campaigns with an "effective boost" calculation tying budget, reach, and staffing to order probability.',
+        'Ran UAT with 3 expert and 9 end-user respondents across 15 questions covering functionality, integration, performance, and interface experience.',
+        'On the interface-specific questions, achieved 93.3% for information readability and 86.7% average for the interface & experience category from expert reviewers.',
+      ],
+      outcomeStats: [
+        { n: '88.4%', l: 'overall UAT score from expert reviewers ("Very Good")' },
+        { n: '86.6%', l: 'overall UAT score from end users ("Very Good")' },
+        { n: '93.3%', l: 'interface readability score, the highest of any UAT item' },
+      ],
+      reflection: 'Most of this project was backend logic, not UI \u2014 but the interface evaluation questions in UAT were a reminder that even in a systems-heavy build, whether people can actually read and navigate what you built is a measurable, separate skill from whether the logic behind it works.',
+    },
+    id: {
+      title: 'MarketChain',
+      tagline: 'Membangun mesin e-commerce sebuah game simulasi bisnis',
+      category: 'EdTech · Platform Simulasi Bisnis',
+      role: 'Module Developer & Evaluator Interface',
+      summary: 'Proyek skripsi saya: merancang dan membangun modul E-Commerce dan Marketing untuk MarketChain, game simulasi bisnis berbasis web yang sedang dikembangkan UMY untuk program studi Bisnis Digital.',
+      problem: 'UMY membutuhkan cara mengajarkan keterampilan bisnis digital \u2014 product listing, transaksi B2B/B2C, kampanye marketing digital \u2014 tanpa risiko uang maupun kegagalan nyata. Belum ada tool yang memungkinkan tim mahasiswa menjalankan simulasi bisnis penuh dari ujung ke ujung, dari memasang produk sampai melihat bagaimana anggaran marketing benar-benar mengubah jumlah pesanan.',
+      processText: 'Saya merancang dan membangun dua dari empat modul bisnis MarketChain \u2014 E-Commerce dan Marketing \u2014 di Laravel, termasuk logika yang menghubungkan keduanya: anggaran, jangkauan, dan staf kampanye secara langsung memengaruhi probabilitas datangnya pesanan dari konsumen virtual. Setelah pengembangan, saya memvalidasi hasilnya dengan Black Box Testing untuk kebenaran fungsional, lalu menjalankan User Acceptance Testing dengan 2 kelompok responden \u2014 3 expert dan 9 pengguna \u2014 dinilai dari sisi fungsionalitas, integrasi, performa, dan pengalaman antarmuka.',
+      solutionPoints: [
+        'Membangun modul E-Commerce: product listing ke marketplace virtual, pemrosesan order B2C, dan alur permintaan stok B2B dengan persetujuan penjual antar tim mahasiswa.',
+        'Membangun modul Marketing: kampanye iklan multi-platform dengan kalkulasi "effective boost" yang menghubungkan anggaran, jangkauan, dan staf terhadap probabilitas order.',
+        'Menjalankan UAT dengan 3 responden expert dan 9 responden pengguna pada 15 pertanyaan mencakup fungsionalitas, integrasi, performa, dan pengalaman antarmuka.',
+        'Pada pertanyaan khusus antarmuka, mencapai skor 93,3% untuk keterbacaan informasi dan rata-rata 86,7% untuk kategori antarmuka & pengalaman dari reviewer expert.',
+      ],
+      outcomeStats: [
+        { n: '88,4%', l: 'skor UAT keseluruhan dari expert ("Sangat Baik")' },
+        { n: '86,6%', l: 'skor UAT keseluruhan dari pengguna ("Sangat Baik")' },
+        { n: '93,3%', l: 'skor keterbacaan antarmuka, tertinggi dari semua item UAT' },
+      ],
+      reflection: 'Sebagian besar proyek ini adalah logika backend, bukan UI \u2014 tapi pertanyaan evaluasi antarmuka dalam UAT jadi pengingat bahwa bahkan dalam proyek yang berat di sistem, apakah orang benar-benar bisa membaca dan menavigasi apa yang kita bangun adalah keahlian terukur yang terpisah dari apakah logikanya berjalan.',
+    },
+  },
+  {
+    slug: 'umy-website-research',
+    year: '2025',
+    accent: '#FF9E1B',
+    accentSoft: '#FFF3E0',
+    mockup: 'research',
+    frameType: 'plain',
+    gallery: [
+    '/case-studies/umy-website-research/1-semuapulau.png',
+    '/case-studies/umy-website-research/2-luarjawa.png',
+  ], // taruh path gambar di public/case-studies/umy-website-research/ lalu daftarkan di sini
+    tools: ['Google Forms', 'Spreadsheet', 'Likert Scale Analysis'],
+    team: { en: '2-person research team', id: 'Tim riset, 2 orang' },
+    timeline: { en: 'Follow-up internship assignment · 3 weeks (2025)', id: 'Tugas lanjutan magang · 3 minggu (2025)' },
+    en: {
+      title: 'UMY Website Research',
+      tagline: 'Finding out what actually convinces a prospective student',
+      category: 'UX Research · Survey Study',
+      role: 'UX Researcher',
+      summary: 'A follow-up internship assignment conducted by a two-person research team to identify which information on UMY’s website most influences prospective students’ decisions, based on responses from 251 participants.',
+      problem: 'University websites display dozens of information types \u2014 accreditation, tuition, campus photos, virtual tours \u2014 with no clear sense of which ones actually move a prospective student toward applying. Content teams were prioritizing visual polish without evidence it mattered.',
+      processText: 'We distributed a 7-point Likert survey to grade 11\u201312 high school students, scoring how important each website content type was to their decision. Over one week we collected 251 responses from 34 provinces, then analyzed average scores and forced-choice top picks, comparing Java-based and outside-Java respondents to check for regional bias.',
+      solutionPoints: [
+        'Measured 30+ website content types across four categories: general campus info, cost & facilities, surrounding environment, and program-specific info.',
+        'Identified university accreditation as the single most decisive factor \u2014 chosen by 172 of 251 respondents as a top-5 influence, with an average importance score of 6.61/7.',
+        'Found that visual content \u2014 campus photos, videos, virtual tours \u2014 consistently scored lowest across every respondent group, contradicting the assumption that visuals drive decisions.',
+        'Delivered a prioritized recommendation: surface accreditation, tuition cost, and graduate career prospects prominently, and treat virtual tours as a secondary, not primary, asset.',
+      ],
+      outcomeStats: [
+        { n: '251', l: 'respondents across 34 provinces' },
+        { n: '172/251', l: 'ranked accreditation as a top decision factor' },
+        { n: '6.61/7', l: 'average importance score for accreditation' },
+      ],
+      reflection: 'The most useful finding was a negative one: content teams (including me, going in) assumed campus photos and virtual tours would matter more than they did. Design decisions based on what looks impressive rather than what respondents actually said would have missed the mark entirely.',
+    },
+    id: {
+      title: 'Riset Website UMY',
+      tagline: 'Mencari tahu apa yang benar-benar meyakinkan calon mahasiswa',
+      category: 'UX Research · Studi Survei',
+      role: 'UX Researcher',
+      summary: 'Tugas lanjutan selama magang yang dikerjakan oleh tim riset beranggotakan dua orang untuk mengidentifikasi informasi pada website UMY yang paling memengaruhi keputusan calon mahasiswa, berdasarkan data dari 251 responden.',
+      problem: 'Website universitas menampilkan puluhan jenis informasi \u2014 akreditasi, biaya kuliah, foto kampus, virtual tour \u2014 tanpa kejelasan mana yang benar-benar mendorong calon mahasiswa untuk mendaftar. Tim konten cenderung memprioritaskan tampilan visual tanpa bukti bahwa itu penting.',
+      processText: 'Kami menyebarkan kuesioner skala Likert 7 poin ke siswa kelas 11\u201312 SMA/SMK, menilai seberapa penting tiap jenis konten website bagi keputusan mereka. Dalam satu minggu terkumpul 251 responden dari 34 provinsi, lalu kami menganalisis rata-rata skor dan pilihan prioritas, membandingkan responden dari Jawa dan luar Jawa untuk mengecek bias regional.',
+      solutionPoints: [
+        'Mengukur 30+ jenis konten website dalam empat kategori: info umum kampus, biaya & fasilitas, lingkungan sekitar, dan info khusus program studi.',
+        'Menemukan bahwa akreditasi universitas adalah faktor paling menentukan \u2014 dipilih 172 dari 251 responden sebagai salah satu dari 5 faktor teratas, dengan skor rata-rata kepentingan 6,61/7.',
+        'Menemukan bahwa konten visual \u2014 foto kampus, video, virtual tour \u2014 konsisten mendapat skor terendah di semua kelompok responden, mematahkan asumsi bahwa visual mendorong keputusan.',
+        'Menyampaikan rekomendasi terprioritas: tampilkan akreditasi, biaya kuliah, dan prospek karier lulusan secara menonjol, dan perlakukan virtual tour sebagai aset sekunder, bukan utama.',
+      ],
+      outcomeStats: [
+        { n: '251', l: 'responden dari 34 provinsi' },
+        { n: '172/251', l: 'menempatkan akreditasi sbg faktor teratas' },
+        { n: '6,61/7', l: 'skor rata-rata kepentingan akreditasi' },
+      ],
+      reflection: 'Temuan paling berguna justru yang negatif: tim konten (termasuk saya sendiri di awal) mengira foto kampus dan virtual tour akan lebih berpengaruh dari kenyataannya. Keputusan desain berdasarkan apa yang terlihat mengesankan, bukan apa yang benar-benar dikatakan responden, akan meleset sepenuhnya.',
+    },
+  },
+];
+
+// Sorted newest-first by year. Swap `b - a` for `a - b` below to show oldest first instead.
+const sortedProjects = [...projects].sort((p1, p2) => parseInt(p2.year, 10) - parseInt(p1.year, 10));
+
+export default sortedProjects;
