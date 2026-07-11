@@ -10,6 +10,7 @@ import BrandIcon from '../ui/BrandIcon';
 // trademarked logo by hand.
 const TOOLS = [
   { name: 'Figma', kind: 'brand', id: 'figma' },
+  { name: 'Photoshop', kind: 'brand', id: 'photoshop' },
   { name: 'Canva', kind: 'lucide', Icon: Palette, color: '#00C4CC' },
   { name: 'WordPress', kind: 'brand', id: 'wordpress' },
   { name: 'VS Code', kind: 'lucide', Icon: Code2, color: '#007ACC' },

@@ -17,5 +17,12 @@ Buka `http://localhost:5173`.
 npm run build
 npm run preview
 ```
+## Cara update
+
+```bash
+git add .
+git commit -m "....."
+git push
+```
 
 Hasil build ada di folder `dist/` — bisa langsung di-deploy ke Vercel, Netlify, Cloudflare Pages, dsb.

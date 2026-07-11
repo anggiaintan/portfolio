@@ -14,7 +14,13 @@ const projects = [
     gallery: [
     '/case-studies/homy-laundry/1-login.png',
     '/case-studies/homy-laundry/2-dashboard.png',
-    '/case-studies/homy-laundry/3-inputpesanan.png',
+    '/case-studies/homy-laundry/3-notif.png',
+    '/case-studies/homy-laundry/4-lihat.png',
+    '/case-studies/homy-laundry/5-hapus.png',
+    '/case-studies/homy-laundry/6-tambah.png',
+    '/case-studies/homy-laundry/7-input.png',
+    '/case-studies/homy-laundry/8-input.png',
+    '/case-studies/homy-laundry/9-input.png',
   ], // taruh path gambar di public/case-studies/homy-laundry/ lalu daftarkan di sini
     tools: ['Figma', 'FigJam', 'Android Studio (tim dev)'],
     team: { en: '4 members — Anggia as UI/UX Designer & Usability Tester', id: '4 anggota — Anggia sebagai UI/UX Designer & Usability Tester' },
@@ -73,6 +79,15 @@ const projects = [
     '/case-studies/kesatriyan-absensi/1-login.png',
     '/case-studies/kesatriyan-absensi/2-dashboard.png',
     '/case-studies/kesatriyan-absensi/3-manajemen.png',
+    '/case-studies/kesatriyan-absensi/4-manajemen2.png',
+    '/case-studies/kesatriyan-absensi/5-manajemen3.png',
+    '/case-studies/kesatriyan-absensi/6-logabsensi.png',
+    '/case-studies/kesatriyan-absensi/7-top.png',
+    '/case-studies/kesatriyan-absensi/8-kelola.png',
+    '/case-studies/kesatriyan-absensi/9-edit.png',
+    '/case-studies/kesatriyan-absensi/10-user.png',
+    '/case-studies/kesatriyan-absensi/11-user2.png',
+    '/case-studies/kesatriyan-absensi/12-user3.png',
   ], // taruh path gambar di public/case-studies/kesatriyan-absensi/ lalu daftarkan di sini
     tools: ['Figma', 'Laravel', 'MySQL'],
     team: { en: '3-person internship team', id: 'Tim magang, 3 orang' },
@@ -130,8 +145,10 @@ const projects = [
     mockup: 'travel',
     gallery: [
     '/case-studies/redesign-website-ti-umy/1-home.png',
-    '/case-studies/redesign-website-ti-umy/2-fasilitas.png',
-    '/case-studies/redesign-website-ti-umy/3-berita.png',
+    '/case-studies/redesign-website-ti-umy/2-home2.png',
+    '/case-studies/redesign-website-ti-umy/3-fasilitas.png',
+    '/case-studies/redesign-website-ti-umy/3-fasilitas2.png',
+    '/case-studies/redesign-website-ti-umy/4-berita.png',
   ], // taruh path gambar di public/case-studies/redesign-website-ti-umy/ lalu daftarkan di sini
     tools: ['Figma', 'FigJam', 'Google Forms'],
     team: { en: '2-person internship team', id: 'Tim magang, 2 orang' },
@@ -240,7 +257,12 @@ const projects = [
     gallery: [
     '/case-studies/marketchain-ecommerce/1-login.png',
     '/case-studies/marketchain-ecommerce/2-ecommerce.png',
-    '/case-studies/marketchain-ecommerce/3-marketing.png',
+    '/case-studies/marketchain-ecommerce/3-ecommerce2.png',
+    '/case-studies/marketchain-ecommerce/4-marketing.png',
+    '/case-studies/marketchain-ecommerce/5-marketing2.png',
+    '/case-studies/marketchain-ecommerce/6-marketing3.png',
+    '/case-studies/marketchain-ecommerce/7-b2b.png',
+    '/case-studies/marketchain-ecommerce/8-b2b2.png',
   ], // taruh path gambar di public/case-studies/marketchain-ecommerce/ lalu daftarkan di sini
     tools: ['Laravel 12', 'PHP 8.2', 'MySQL', 'Figma'],
     team: { en: 'Thesis project — Anggia designed & built the E-Commerce and Marketing modules', id: 'Skripsi individu — Anggia merancang & membangun modul E-Commerce dan Marketing' },
@@ -296,8 +318,11 @@ const projects = [
     mockup: 'research',
     frameType: 'plain',
     gallery: [
-    '/case-studies/umy-website-research/1-semuapulau.png',
-    '/case-studies/umy-website-research/2-luarjawa.png',
+    '/case-studies/umy-website-research/1-web1.png',
+    '/case-studies/umy-website-research/2.web2.png',
+    '/case-studies/umy-website-research/3-web3.png',
+    '/case-studies/umy-website-research/4-web4.png',
+    '/case-studies/umy-website-research/5-web5.png',
   ], // taruh path gambar di public/case-studies/umy-website-research/ lalu daftarkan di sini
     tools: ['Google Forms', 'Spreadsheet', 'Likert Scale Analysis'],
     team: { en: '2-person research team', id: 'Tim riset, 2 orang' },
