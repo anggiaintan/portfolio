@@ -319,7 +319,7 @@ const projects = [
     frameType: 'plain',
     gallery: [
     '/case-studies/umy-website-research/1-web1.png',
-    '/case-studies/umy-website-research/2.web2.png',
+    '/case-studies/umy-website-research/2-web2.png',
     '/case-studies/umy-website-research/3-web3.png',
     '/case-studies/umy-website-research/4-web4.png',
     '/case-studies/umy-website-research/5-web5.png',
