@@ -22,7 +22,7 @@ const projects = [
     '/case-studies/homy-laundry/8-input.png',
     '/case-studies/homy-laundry/9-input.png',
   ], // taruh path gambar di public/case-studies/homy-laundry/ lalu daftarkan di sini
-    tools: ['Figma', 'FigJam', 'Android Studio (tim dev)'],
+    tools: ['Figma', 'Android Studio (tim dev)'],
     team: { en: '4 members — Anggia as UI/UX Designer & Usability Tester', id: '4 anggota — Anggia sebagai UI/UX Designer & Usability Tester' },
     timeline: { en: '1 semester (2025)', id: '1 semester (2025)' },
     en: {
@@ -150,7 +150,7 @@ const projects = [
     '/case-studies/redesign-website-ti-umy/3-fasilitas2.png',
     '/case-studies/redesign-website-ti-umy/4-berita.png',
   ], // taruh path gambar di public/case-studies/redesign-website-ti-umy/ lalu daftarkan di sini
-    tools: ['Figma', 'FigJam', 'Google Forms'],
+    tools: ['Figma', 'Google Forms'],
     team: { en: '2-person internship team', id: 'Tim magang, 2 orang' },
     timeline: { en: 'Internship project · 2.5 months (2025)', id: 'Proyek magang · 2,5 bulan (2025)' },
     en: {
